@@ -1,5 +1,6 @@
 package com.edumate.edumate.config;
 
+import com.edumate.edumate.entities.user.Role;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -10,8 +11,6 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.function.Function;
 
 @Service
@@ -27,20 +26,16 @@ public class JwtService {
     return claimsResolver.apply(claims);
   }
 
-  public String generateToken(UserDetails userDetails) {
-    return generateToken(new HashMap<>(), userDetails);
-  }
+  public String generateToken(String email, Role role) {
+    Date now = new Date();
+    Date expiryDate = new Date(now.getTime() + 1000 * 60 * 24);
 
-  public String generateToken(
-      Map<String, Object> extraClaims,
-      UserDetails userDetails
-  ) {
-    return Jwts
-        .builder()
-        .setClaims(extraClaims)
-        .setSubject(userDetails.getUsername())
-        .setIssuedAt(new Date(System.currentTimeMillis()))
-        .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24))
+    return Jwts.builder()
+        .setHeaderParam("typ", "JWT")
+        .claim("role", role)
+        .setSubject(email)
+        .setIssuedAt(now)
+        .setExpiration(expiryDate)
         .signWith(getSignInKey(), SignatureAlgorithm.HS256)
         .compact();
   }
