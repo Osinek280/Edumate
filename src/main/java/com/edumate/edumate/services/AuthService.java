@@ -2,8 +2,8 @@ package com.edumate.edumate.services;
 
 import com.edumate.edumate.config.JwtService;
 import com.edumate.edumate.controllers.auth.AuthenticationResponse;
-import com.edumate.edumate.controllers.auth.LoginRequest;
 import com.edumate.edumate.controllers.auth.RegisterRequest;
+import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.entities.user.AppUser;
 import com.edumate.edumate.entities.user.Role;
 import com.edumate.edumate.repositories.UserRepository;
@@ -41,12 +41,12 @@ public class AuthService {
   public AuthenticationResponse login(LoginRequest request) {
     authenticationManager.authenticate(
         new UsernamePasswordAuthenticationToken(
-            request.getEmail(),
-            request.getPassword()
+            request.email(),
+            request.password()
         )
     );
 
-    AppUser user = repository.findByEmail(request.getEmail())
+    AppUser user = repository.findByEmail(request.email())
         .orElseThrow();
 
     String token = jwtService.generateToken(user.getEmail(), user.getRole());

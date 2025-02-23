@@ -1,5 +1,6 @@
 package com.edumate.edumate.controllers.auth;
 
+import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ public class AuthController {
   }
 
   @PostMapping("/login")
+//  @Operation(summary = "User Login", description = "Authenticates a user and returns a JWT token.")
   public ResponseEntity<AuthenticationResponse> register(
       @RequestBody LoginRequest request
   ) {

@@ -25,8 +25,8 @@ public class DataSeeder {
         .email("admin@admin.com")
         .firstname("Adam")
         .lastname("Admin")
-        .password(passwordEncoder.encode("123"))
-        .role(Role.STUDENT)
+        .password(passwordEncoder.encode("admin"))
+        .role(Role.ADMIN)
         .build();
 
     userRepository.save(user);
