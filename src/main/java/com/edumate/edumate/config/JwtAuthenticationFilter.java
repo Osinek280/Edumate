@@ -1,7 +1,5 @@
 package com.edumate.edumate.config;
 
-import com.edumate.edumate.entities.user.AppUser;
-import com.edumate.edumate.repositories.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

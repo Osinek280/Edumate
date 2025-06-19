@@ -2,6 +2,7 @@ package com.edumate.edumate.controllers.auth;
 
 import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.services.AuthService;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +22,8 @@ public class AuthController {
   }
 
   @PostMapping("/login")
-//  @Operation(summary = "User Login", description = "Authenticates a user and returns a JWT token.")
-  public ResponseEntity<AuthenticationResponse> register(
+  @Operation(summary = "User Login", description = "Authenticates a user and returns a JWT token.")
+  public ResponseEntity<AuthenticationResponse> login(
       @RequestBody LoginRequest request
   ) {
     return ResponseEntity.ok(service.login(request));
