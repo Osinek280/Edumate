@@ -29,6 +29,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 .env
+.oxford-5000.csv
 
 ### VS Code ###
 .vscode/
