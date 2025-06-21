@@ -6,11 +6,15 @@ import com.edumate.edumate.entities.user.UserVocabulary;
 import com.edumate.edumate.entities.user.AppUser;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public interface UserVocabularyRepository extends JpaRepository<UserVocabulary, Long>{
-  List<UserVocabulary> findByUserEmailAndStatus(String email, LearningStatus status);
+  @Query("SELECT uv.vocabulary.id FROM UserVocabulary uv WHERE uv.user.email = :userEmail")
+  List<Long> findVocabularyIdsByUserEmail(@Param("userEmail") String userEmail);
+  List<UserVocabulary> findByUserEmailAndStatus(String email, LearningStatus status, Pageable pageable);
 }

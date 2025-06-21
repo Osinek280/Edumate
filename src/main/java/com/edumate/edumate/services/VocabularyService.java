@@ -28,11 +28,34 @@ public class VocabularyService {
     }
   }
 
-  public List<Vocabulary> getKnownWords(String userEmail) {
-    return userVocabularyRepository.findByUserEmailAndStatus(userEmail, LearningStatus.KNOWN)
-        .stream()
-        .map(UserVocabulary::getVocabulary)
-        .toList();
+  public List<Vocabulary> getVocabularyByStatus(String userEmail, LearningStatus status, Level level, Pageable pageable) {
+    if(status == null) {
+      if(level != null) {
+        return vocabularyRepository.findAllByLevel(level, pageable).getContent();
+      }else {
+        return vocabularyRepository.findAll(pageable).getContent();
+      }
+    }
+    if (status == LearningStatus.UNKNOWN) {
+      List<Long> userVocabularyIds = userVocabularyRepository.findVocabularyIdsByUserEmail(userEmail);
+      if (userVocabularyIds.isEmpty()) {
+        if(level != null) {
+          return vocabularyRepository.findAllByLevel(level, pageable).getContent();
+        }else {
+          return vocabularyRepository.findAll(pageable).getContent();
+        }
+      }
+      if (level != null) {
+        return vocabularyRepository.findByIdNotInAndLevel(userVocabularyIds, level, pageable).getContent();
+      } else {
+        return vocabularyRepository.findByIdNotIn(userVocabularyIds, pageable).getContent();
+      }
+    } else {
+      return userVocabularyRepository.findByUserEmailAndStatus(userEmail, status, pageable)
+          .stream()
+          .map(UserVocabulary::getVocabulary)
+          .toList();
+    }
   }
 
   public long countByLevel(Level level) {

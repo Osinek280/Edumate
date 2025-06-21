@@ -1,5 +1,6 @@
 package com.edumate.edumate.controllers;
 
+import com.edumate.edumate.entities.user.LearningStatus;
 import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.Vocabulary;
 import com.edumate.edumate.services.VocabularyService;
@@ -55,8 +56,14 @@ public class VocabularyController {
     return vocabularyService.countByLevel(level);
   }
   @GetMapping("/known")
-  public ResponseEntity<List<Vocabulary>> getKnownWords(@AuthenticationPrincipal UserDetails user) {
-    List<Vocabulary> knownWords = vocabularyService.getKnownWords(user.getUsername());
+  public ResponseEntity<List<Vocabulary>> getKnownWords(
+      @AuthenticationPrincipal UserDetails user,
+      @Parameter(description = "Level filter: a1, a2, b1, b2, c1, c2")
+      @RequestParam(required = false) Level level,
+      @RequestParam(required = false)LearningStatus status,
+      @ParameterObject Pageable pageable
+  ) {
+    List<Vocabulary> knownWords = vocabularyService.getVocabularyByStatus(user.getUsername(), status, level, pageable);
     return ResponseEntity.ok(knownWords);
   }
 
