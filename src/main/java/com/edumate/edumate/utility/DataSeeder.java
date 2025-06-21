@@ -1,6 +1,7 @@
 package com.edumate.edumate.utility;
 
 import com.edumate.edumate.entities.user.AppUser;
+import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.Role;
 import com.edumate.edumate.entities.user.Vocabulary;
 import com.edumate.edumate.repositories.UserRepository;
@@ -19,7 +20,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Component
+@Component
 public class DataSeeder {
   @Autowired
   private UserRepository userRepository;
@@ -52,7 +53,15 @@ public class DataSeeder {
         }
         String word = nextLine[0];
         String wordClass = nextLine[1];
-        String level = nextLine[2];
+        String levelStr = nextLine[2];
+
+        Level level;
+        try {
+          level = Level.valueOf(levelStr.trim().toUpperCase());
+        } catch (IllegalArgumentException e) {
+          System.err.printf("⚠️  Pominięto słowo '%s' z nieprawidłowym levelem: '%s'%n", word, levelStr);
+          continue; // pomiń błędne rekordy
+        }
 
         Vocabulary vocab = Vocabulary.builder()
             .word(word)
