@@ -11,10 +11,23 @@ import lombok.RequiredArgsConstructor;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.userdetails.UserDetails;
+import com.edumate.edumate.entities.user.Vocabulary;
+import com.edumate.edumate.services.VocabularyService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/vocabulary")
@@ -41,4 +54,10 @@ public class VocabularyController {
       @RequestParam Level level) {
     return vocabularyService.countByLevel(level);
   }
+  @GetMapping("/known")
+  public ResponseEntity<List<Vocabulary>> getKnownWords(@AuthenticationPrincipal UserDetails user) {
+    List<Vocabulary> knownWords = vocabularyService.getKnownWords(user.getUsername());
+    return ResponseEntity.ok(knownWords);
+  }
+
 }
