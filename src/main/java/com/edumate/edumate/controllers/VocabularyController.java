@@ -18,15 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.edumate.edumate.entities.user.Vocabulary;
-import com.edumate.edumate.services.VocabularyService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -37,15 +29,15 @@ import java.util.List;
 public class VocabularyController {
   private final VocabularyService vocabularyService;
 
-  @SecurityRequirement(name = "bearer-jwt")
-  @GetMapping
-  @Operation(summary = "Get vocabulary list with pagination and optional level filter")
-  public Page<Vocabulary> getVocabulary(
-      @Parameter(description = "Level filter: a1, a2, b1, b2, c1, c2")
-      @RequestParam(required = false) Level level,
-      @ParameterObject Pageable pageable) {
-    return vocabularyService.getVocabulary(level, pageable);
-  }
+//  @SecurityRequirement(name = "bearer-jwt")
+//  @GetMapping
+//  @Operation(summary = "Get vocabulary list with pagination and optional level filter")
+//  public Page<Vocabulary> getVocabulary(
+//      @Parameter(description = "Level filter: a1, a2, b1, b2, c1, c2")
+//      @RequestParam(required = false) Level level,
+//      @ParameterObject Pageable pageable) {
+//    return vocabularyService.getVocabulary(level, pageable);
+//  }
 
   @SecurityRequirement(name = "bearer-jwt")
   @GetMapping("/count")
@@ -55,11 +47,14 @@ public class VocabularyController {
       @RequestParam Level level) {
     return vocabularyService.countByLevel(level);
   }
-  @GetMapping("/known")
+  @SecurityRequirement(name = "bearer-jwt")
+  @GetMapping
+  @Operation(summary = "Get known vocabulary words by user, optional level/status filter")
   public ResponseEntity<List<Vocabulary>> getKnownWords(
       @AuthenticationPrincipal UserDetails user,
       @Parameter(description = "Level filter: a1, a2, b1, b2, c1, c2")
       @RequestParam(required = false) Level level,
+      @Parameter(description = "Learning status filter: known, unknown, learning")
       @RequestParam(required = false)LearningStatus status,
       @ParameterObject Pageable pageable
   ) {

@@ -20,13 +20,13 @@ public class VocabularyService {
   private final VocabularyRepository vocabularyRepository;
   private final UserVocabularyRepository userVocabularyRepository;
 
-  public Page<Vocabulary> getVocabulary(Level level, Pageable pageable) {
-    if(level != null) {
-      return vocabularyRepository.findAllByLevel(level, pageable);
-    } else {
-      return vocabularyRepository.findAll(pageable);
-    }
-  }
+//  public Page<Vocabulary> getVocabulary(Level level, Pageable pageable) {
+//    if(level != null) {
+//      return vocabularyRepository.findAllByLevel(level, pageable);
+//    } else {
+//      return vocabularyRepository.findAll(pageable);
+//    }
+//  }
 
   public List<Vocabulary> getVocabularyByStatus(String userEmail, LearningStatus status, Level level, Pageable pageable) {
     if(status == null) {
@@ -36,7 +36,7 @@ public class VocabularyService {
         return vocabularyRepository.findAll(pageable).getContent();
       }
     }
-    if (status == LearningStatus.UNKNOWN) {
+    else if (status == LearningStatus.UNKNOWN) {
       List<Long> userVocabularyIds = userVocabularyRepository.findVocabularyIdsByUserEmail(userEmail);
       if (userVocabularyIds.isEmpty()) {
         if(level != null) {
@@ -45,16 +45,25 @@ public class VocabularyService {
           return vocabularyRepository.findAll(pageable).getContent();
         }
       }
-      if (level != null) {
+      else if (level != null) {
         return vocabularyRepository.findByIdNotInAndLevel(userVocabularyIds, level, pageable).getContent();
       } else {
         return vocabularyRepository.findByIdNotIn(userVocabularyIds, pageable).getContent();
       }
     } else {
-      return userVocabularyRepository.findByUserEmailAndStatus(userEmail, status, pageable)
-          .stream()
-          .map(UserVocabulary::getVocabulary)
-          .toList();
+      if (level != null) {
+        return userVocabularyRepository
+            .findByUserEmailAndStatusAndVocabulary_Level(userEmail, status, level, pageable)
+            .stream()
+            .map(UserVocabulary::getVocabulary)
+            .toList();
+      } else {
+        return userVocabularyRepository
+            .findByUserEmailAndStatus(userEmail, status, pageable)
+            .stream()
+            .map(UserVocabulary::getVocabulary)
+            .toList();
+      }
     }
   }
 

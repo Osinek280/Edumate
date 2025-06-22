@@ -1,6 +1,7 @@
 package com.edumate.edumate.repositories;
 
 import com.edumate.edumate.entities.user.LearningStatus;
+import com.edumate.edumate.entities.user.Level;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.edumate.edumate.entities.user.UserVocabulary;
 import com.edumate.edumate.entities.user.AppUser;
@@ -17,4 +18,11 @@ public interface UserVocabularyRepository extends JpaRepository<UserVocabulary, 
   @Query("SELECT uv.vocabulary.id FROM UserVocabulary uv WHERE uv.user.email = :userEmail")
   List<Long> findVocabularyIdsByUserEmail(@Param("userEmail") String userEmail);
   List<UserVocabulary> findByUserEmailAndStatus(String email, LearningStatus status, Pageable pageable);
+
+  Page<UserVocabulary> findByUserEmailAndStatusAndVocabulary_Level(
+      String userEmail,
+      LearningStatus status,
+      Level level,
+      Pageable pageable
+  );
 }
