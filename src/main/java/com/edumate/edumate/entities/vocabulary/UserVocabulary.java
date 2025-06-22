@@ -1,5 +1,6 @@
-package com.edumate.edumate.entities.user;
+package com.edumate.edumate.entities.vocabulary;
 
+import com.edumate.edumate.entities.user.AppUser;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,13 +12,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Vocabulary {
+public class UserVocabulary {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String word;
-  private String wordClass;
+  @ManyToOne
+  private AppUser user;
+
+  @ManyToOne
+  private Vocabulary vocabulary;
+
   @Enumerated(EnumType.STRING)
-  private Level level;
+  private LearningStatus status;
 }

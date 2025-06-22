@@ -2,12 +2,12 @@ package com.edumate.edumate.services;
 
 
 import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
-import com.edumate.edumate.entities.user.LearningStatus;
-import com.edumate.edumate.entities.user.Level;
-import com.edumate.edumate.entities.user.UserVocabulary;
-import com.edumate.edumate.entities.user.Vocabulary;
-import com.edumate.edumate.repositories.UserVocabularyRepository;
-import com.edumate.edumate.repositories.VocabularyRepository;
+import com.edumate.edumate.entities.vocabulary.LearningStatus;
+import com.edumate.edumate.entities.vocabulary.Level;
+import com.edumate.edumate.entities.vocabulary.UserVocabulary;
+import com.edumate.edumate.entities.vocabulary.Vocabulary;
+import com.edumate.edumate.repositories.Vocabulary.UserVocabularyRepository;
+import com.edumate.edumate.repositories.Vocabulary.VocabularyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

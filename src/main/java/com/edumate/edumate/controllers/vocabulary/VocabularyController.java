@@ -1,9 +1,9 @@
-package com.edumate.edumate.controllers;
+package com.edumate.edumate.controllers.vocabulary;
 
 import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
-import com.edumate.edumate.entities.user.LearningStatus;
-import com.edumate.edumate.entities.user.Level;
-import com.edumate.edumate.entities.user.Vocabulary;
+import com.edumate.edumate.entities.vocabulary.LearningStatus;
+import com.edumate.edumate.entities.vocabulary.Level;
+import com.edumate.edumate.entities.vocabulary.Vocabulary;
 import com.edumate.edumate.services.VocabularyService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -64,7 +64,7 @@ public class VocabularyController {
       @Parameter(description = "Level filter: a1, a2, b1, b2, c1, c2")
       @RequestParam(required = false) Level level,
       @Parameter(description = "Learning status filter: known, unknown, learning")
-      @RequestParam(required = false)LearningStatus status,
+      @RequestParam(required = false) LearningStatus status,
       @ParameterObject Pageable pageable
   ) {
     List<Vocabulary> knownWords = vocabularyService.getVocabularyByStatus(user.getUsername(), status, level, pageable);

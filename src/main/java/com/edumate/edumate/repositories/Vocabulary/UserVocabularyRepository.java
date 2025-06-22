@@ -1,10 +1,9 @@
-package com.edumate.edumate.repositories;
+package com.edumate.edumate.repositories.Vocabulary;
 
-import com.edumate.edumate.entities.user.LearningStatus;
-import com.edumate.edumate.entities.user.Level;
+import com.edumate.edumate.entities.vocabulary.LearningStatus;
+import com.edumate.edumate.entities.vocabulary.Level;
+import com.edumate.edumate.entities.vocabulary.UserVocabulary;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.edumate.edumate.entities.user.UserVocabulary;
-import com.edumate.edumate.entities.user.AppUser;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
