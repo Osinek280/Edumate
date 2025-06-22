@@ -1,5 +1,6 @@
 package com.edumate.edumate.repositories;
 
+import com.edumate.edumate.entities.user.LearningStatus;
 import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.Vocabulary;
 import org.springframework.data.domain.Page;

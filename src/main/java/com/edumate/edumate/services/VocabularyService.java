@@ -1,6 +1,7 @@
 package com.edumate.edumate.services;
 
 
+import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
 import com.edumate.edumate.entities.user.LearningStatus;
 import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.UserVocabulary;
@@ -65,6 +66,13 @@ public class VocabularyService {
             .toList();
       }
     }
+  }
+
+  public VocabularyStatusCountDto countByStatus(String username) {
+    long known = userVocabularyRepository.countByUserEmailAndStatus(username, LearningStatus.KNOWN);
+    long unknown = vocabularyRepository.count() - userVocabularyRepository.countByUserEmail(username);
+    long learning = userVocabularyRepository.countByUserEmailAndStatus(username, LearningStatus.UNKNOWN);
+    return new VocabularyStatusCountDto(known, unknown, learning);
   }
 
   public long countByLevel(Level level) {

@@ -18,6 +18,8 @@ public interface UserVocabularyRepository extends JpaRepository<UserVocabulary, 
   @Query("SELECT uv.vocabulary.id FROM UserVocabulary uv WHERE uv.user.email = :userEmail")
   List<Long> findVocabularyIdsByUserEmail(@Param("userEmail") String userEmail);
   List<UserVocabulary> findByUserEmailAndStatus(String email, LearningStatus status, Pageable pageable);
+  long countByUserEmailAndStatus(String email, LearningStatus status);
+  long countByUserEmail(String email);
 
   Page<UserVocabulary> findByUserEmailAndStatusAndVocabulary_Level(
       String userEmail,

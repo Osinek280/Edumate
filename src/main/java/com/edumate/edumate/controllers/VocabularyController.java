@@ -1,5 +1,6 @@
 package com.edumate.edumate.controllers;
 
+import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
 import com.edumate.edumate.entities.user.LearningStatus;
 import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.Vocabulary;
@@ -38,6 +39,14 @@ public class VocabularyController {
 //      @ParameterObject Pageable pageable) {
 //    return vocabularyService.getVocabulary(level, pageable);
 //  }
+
+  @SecurityRequirement(name = "bearer-jwt")
+  @GetMapping("/countByStatus")
+  @Operation(summary = "Get count of vocabulary words for a given status")
+  public VocabularyStatusCountDto countUserVocabularyByStatus(
+      @AuthenticationPrincipal UserDetails user) {
+    return vocabularyService.countByStatus(user.getUsername());
+  }
 
   @SecurityRequirement(name = "bearer-jwt")
   @GetMapping("/count")
