@@ -2,6 +2,7 @@ package com.edumate.edumate.services;
 
 import com.edumate.edumate.config.JwtService;
 import com.edumate.edumate.controllers.auth.AuthenticationResponse;
+import com.edumate.edumate.controllers.auth.LanguageLevel;
 import com.edumate.edumate.controllers.auth.RegisterRequest;
 import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.entities.user.AppUser;
@@ -37,6 +38,14 @@ public class AuthService {
         .token(token)
         .build();
   }
+
+  public void updateLanguageLevel(String userEmail, LanguageLevel level) {
+    AppUser user = userRepository.findByEmail(userEmail)
+        .orElseThrow(() -> new RuntimeException("User not found"));
+    user.setLanguageLevel(level);
+    userRepository.save(user);
+  }
+
 
   public AuthenticationResponse login(LoginRequest request) {
     authenticationManager.authenticate(
