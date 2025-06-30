@@ -1,11 +1,11 @@
 package com.edumate.edumate.utility;
 
 import com.edumate.edumate.entities.user.AppUser;
-import com.edumate.edumate.entities.user.Level;
 import com.edumate.edumate.entities.user.Role;
-import com.edumate.edumate.entities.user.Vocabulary;
+import com.edumate.edumate.entities.vocabulary.Level;
+import com.edumate.edumate.entities.vocabulary.Vocabulary;
 import com.edumate.edumate.repositories.UserRepository;
-import com.edumate.edumate.repositories.VocabularyRepository;
+import com.edumate.edumate.repositories.Vocabulary.VocabularyRepository;
 import com.opencsv.CSVReader;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,12 +28,13 @@ public class DataSeeder {
   @Autowired
   private VocabularyRepository vocabularyRepository;
 
+
   @Autowired
   private BCryptPasswordEncoder passwordEncoder;
   @PostConstruct
   public void seedData() {
-    createUsers();
-    importVocabularyFromCsv();
+//    createUsers();
+//    importVocabularyFromCsv();
   }
 
   private void importVocabularyFromCsv() {
