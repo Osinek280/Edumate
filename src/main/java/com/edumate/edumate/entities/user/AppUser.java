@@ -1,5 +1,7 @@
 package com.edumate.edumate.entities.user;
 
+import com.edumate.edumate.controllers.auth.LanguageLevel;
+import com.edumate.edumate.entities.vocabulary.Level;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,6 +31,9 @@ public class AppUser implements UserDetails {
 
   @Enumerated(EnumType.STRING)
   private Role role;
+
+  @Enumerated(EnumType.STRING)
+  private Level languageLevel;
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,18 +1,22 @@
 package com.edumate.edumate.services;
 
 
-import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
+import com.edumate.edumate.dto.VocabularyStatusCountDto;
+import com.edumate.edumate.entities.user.AppUser;
 import com.edumate.edumate.entities.vocabulary.LearningStatus;
 import com.edumate.edumate.entities.vocabulary.Level;
 import com.edumate.edumate.entities.vocabulary.UserVocabulary;
 import com.edumate.edumate.entities.vocabulary.Vocabulary;
+import com.edumate.edumate.repositories.UserRepository;
 import com.edumate.edumate.repositories.Vocabulary.UserVocabularyRepository;
 import com.edumate.edumate.repositories.Vocabulary.VocabularyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -20,14 +24,36 @@ import java.util.List;
 public class VocabularyService {
   private final VocabularyRepository vocabularyRepository;
   private final UserVocabularyRepository userVocabularyRepository;
+  private final UserRepository userRepository;
 
-//  public Page<Vocabulary> getVocabulary(Level level, Pageable pageable) {
-//    if(level != null) {
-//      return vocabularyRepository.findAllByLevel(level, pageable);
-//    } else {
-//      return vocabularyRepository.findAll(pageable);
-//    }
-//  }
+  @Async
+  public void initializeUserVocabulary(String userEmail, Level level) {
+    AppUser user = userRepository.findByEmail(userEmail)
+        .orElseThrow(() -> new IllegalArgumentException("User not found with email: " + userEmail));
+    List<Vocabulary> allWords = vocabularyRepository.findAll();
+
+    List<UserVocabulary> userVocabularyList = allWords.stream()
+        .filter(vocab -> vocab.getLevel() != null)
+        .filter(vocab -> vocab.getLevel().compareTo(level) <= 0) 
+        .map(vocab -> {
+          LearningStatus status = vocab.getLevel().compareTo(level) < 0
+              ? LearningStatus.KNOWN
+              : LearningStatus.LEARNING;
+
+          return UserVocabulary.builder()
+              .user(user)
+              .vocabulary(vocab)
+              .status(status)
+              .difficulty(0.3)
+              .easiness(2.5)
+              .repetitions(0)
+              .nextReviewDate(LocalDate.now())
+              .build();
+        })
+        .toList();
+
+    userVocabularyRepository.saveAll(userVocabularyList);
+  }
 
   public List<Vocabulary> getVocabularyByStatus(String userEmail, LearningStatus status, Level level, Pageable pageable) {
     if(status == null) {

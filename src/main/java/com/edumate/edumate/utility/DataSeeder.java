@@ -28,12 +28,13 @@ public class DataSeeder {
   @Autowired
   private VocabularyRepository vocabularyRepository;
 
+
   @Autowired
   private BCryptPasswordEncoder passwordEncoder;
   @PostConstruct
   public void seedData() {
-    createUsers();
-    importVocabularyFromCsv();
+//    createUsers();
+//    importVocabularyFromCsv();
   }
 
   private void importVocabularyFromCsv() {

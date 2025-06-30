@@ -7,6 +7,7 @@ import com.edumate.edumate.controllers.auth.RegisterRequest;
 import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.entities.user.AppUser;
 import com.edumate.edumate.entities.user.Role;
+import com.edumate.edumate.entities.vocabulary.Level;
 import com.edumate.edumate.repositories.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -39,7 +40,7 @@ public class AuthService {
         .build();
   }
 
-  public void updateLanguageLevel(String userEmail, LanguageLevel level) {
+  public void updateLanguageLevel(String userEmail, Level level) {
     AppUser user = userRepository.findByEmail(userEmail)
         .orElseThrow(() -> new RuntimeException("User not found"));
     user.setLanguageLevel(level);

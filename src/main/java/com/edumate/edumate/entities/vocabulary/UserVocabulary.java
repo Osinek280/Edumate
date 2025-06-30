@@ -7,6 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -26,4 +30,12 @@ public class UserVocabulary {
 
   @Enumerated(EnumType.STRING)
   private LearningStatus status;
+
+  private double difficulty;  // Indywidualna trudność dla tego użytkownika (np. 0.5)
+  private double easiness;    // Indywidualny współczynnik łatwości (np. 2.5)
+  private int repetitions;    // Liczba powtórek
+  private LocalDate nextReviewDate;
+
+  @OneToMany(cascade = CascadeType.ALL)
+  private List<ReviewLog> reviewLogs = new ArrayList<>();
 }

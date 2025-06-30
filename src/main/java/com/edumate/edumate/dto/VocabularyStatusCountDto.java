@@ -1,4 +1,4 @@
-package com.edumate.edumate.dto.auth;
+package com.edumate.edumate.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

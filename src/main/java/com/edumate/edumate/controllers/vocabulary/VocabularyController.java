@@ -1,6 +1,6 @@
 package com.edumate.edumate.controllers.vocabulary;
 
-import com.edumate.edumate.dto.auth.VocabularyStatusCountDto;
+import com.edumate.edumate.dto.VocabularyStatusCountDto;
 import com.edumate.edumate.entities.vocabulary.LearningStatus;
 import com.edumate.edumate.entities.vocabulary.Level;
 import com.edumate.edumate.entities.vocabulary.Vocabulary;
