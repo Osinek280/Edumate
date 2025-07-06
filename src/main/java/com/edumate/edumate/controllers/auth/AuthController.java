@@ -34,6 +34,13 @@ public class AuthController {
   ) {
     return ResponseEntity.ok(service.login(request));
   }
+  @GetMapping("/me")
+  @Operation(summary = "Get user info", description = "Returns basic user information (email, firstname).")
+  public ResponseEntity<UserInfoResponse> getUserInfo(@AuthenticationPrincipal UserDetails user) {
+    var userInfo = service.getUserInfo(user.getUsername());
+    return ResponseEntity.ok(userInfo);
+  }
+
 
   @PutMapping("/language-level")
   @Operation(summary = "Update language level", description = "Updates the user's English proficiency level.")

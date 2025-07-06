@@ -4,11 +4,13 @@ import com.edumate.edumate.config.JwtService;
 import com.edumate.edumate.controllers.auth.AuthenticationResponse;
 import com.edumate.edumate.controllers.auth.LanguageLevel;
 import com.edumate.edumate.controllers.auth.RegisterRequest;
+import com.edumate.edumate.controllers.auth.UserInfoResponse;
 import com.edumate.edumate.dto.auth.LoginRequest;
 import com.edumate.edumate.entities.user.AppUser;
 import com.edumate.edumate.entities.user.Role;
 import com.edumate.edumate.entities.vocabulary.Level;
 import com.edumate.edumate.repositories.UserRepository;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -46,6 +48,12 @@ public class AuthService {
     user.setLanguageLevel(level);
     userRepository.save(user);
   }
+  public UserInfoResponse getUserInfo(String email) {
+    var user = userRepository.findByEmail(email)
+        .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+    return new UserInfoResponse(user.getEmail(), user.getFirstname());
+  }
+
 
 
   public AuthenticationResponse login(LoginRequest request) {
