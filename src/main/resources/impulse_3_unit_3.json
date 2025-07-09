@@ -1,0 +1,487 @@
+[
+  {
+    "english": "alien",
+    "phonetic": "/ˈeɪliən/",
+    "translation": "obcy"
+  },
+  {
+    "english": "amazing",
+    "phonetic": "/əˈmeɪzɪŋ/",
+    "translation": "niesamowity,"
+  },
+  {
+    "english": "amusing",
+    "phonetic": "/əˈmjuːzɪŋ/",
+    "translation": "zabawny"
+  },
+  {
+    "english": "ancient",
+    "phonetic": "/ˈeɪnʃənt/",
+    "translation": "starożytny"
+  },
+  {
+    "english": "commit",
+    "phonetic": "/kəˈmɪt/",
+    "translation": "popełnić"
+  },
+  {
+    "english": "curious",
+    "phonetic": "/ˈkjʊəriəs/",
+    "translation": "osobliwy; ciekawy"
+  },
+  {
+    "english": "delighted",
+    "phonetic": "/dɪˈlaɪtɪd/",
+    "translation": "zachwycony"
+  },
+  {
+    "english": "enjoyable",
+    "phonetic": "/ɪnˈdʒɔɪəbəl/",
+    "translation": "przyjemny"
+  },
+  {
+    "english": "frightening",
+    "phonetic": "/ˈfraɪtənɪŋ/",
+    "translation": "straszny"
+  },
+  {
+    "english": "huge",
+    "phonetic": "/hjuːdʒ/",
+    "translation": "ogromny"
+  },
+  {
+    "english": "inspiring",
+    "phonetic": "/ɪnˈspaɪərɪŋ/",
+    "translation": "inspirujący, porywający"
+  },
+  {
+    "english": "intriguing",
+    "phonetic": "/ɪnˈtriːɡɪŋ/",
+    "translation": "intrygujący"
+  },
+  {
+    "english": "maze",
+    "phonetic": "/meɪz/",
+    "translation": "labirynt"
+  },
+  {
+    "english": "mysterious",
+    "phonetic": "/mɪˈstɪəriəs/",
+    "translation": "tajemniczy"
+  },
+  {
+    "english": "original",
+    "phonetic": "/əˈrɪdʒənəl/",
+    "translation": "oryginalny, niezwykły"
+  },
+  {
+    "english": "puzzling",
+    "phonetic": "/ˈpʌzəlɪŋ/",
+    "translation": "zagadkowy"
+  },
+  {
+    "english": "suicide",
+    "phonetic": "/ˈsuːɪsaɪd/",
+    "translation": "samobójstwo"
+  },
+  {
+    "english": "tape",
+    "phonetic": "/teɪp/",
+    "translation": "taśma"
+  },
+  {
+    "english": "terrifying",
+    "phonetic": "/ˈterɪˌfaɪɪŋ/",
+    "translation": "przerażający"
+  },
+  {
+    "english": "thrilling",
+    "phonetic": "/ˈθrɪlɪŋ/",
+    "translation": "porywający, ekscytujący"
+  },
+  {
+    "english": "true to life",
+    "phonetic": "/ˌtruː tə ˈlaɪf/",
+    "translation": "realistyczny"
+  },
+  {
+    "english": "unbelievable",
+    "phonetic": "/ˌʌnbɪˈliːvəbəl/",
+    "translation": "niewiarygodny"
+  },
+  {
+    "english": "mermaid",
+    "phonetic": "/ˈmɜːˌmeɪd/",
+    "translation": "syrena"
+  },
+  {
+    "english": "sculpture",
+    "phonetic": "/ˈskʌlptʃə/",
+    "translation": "rzeźba"
+  },
+  {
+    "english": "temple",
+    "phonetic": "/ˈtempəl/",
+    "translation": "świątynia"
+  },
+  {
+    "english": "doubt",
+    "phonetic": "/daʊt/",
+    "translation": "wątpić, wątpliwość"
+  },
+  {
+    "english": "locker",
+    "phonetic": "/ˈlɒkə/",
+    "translation": "szaa"
+  },
+  {
+    "english": "chapter",
+    "phonetic": "/ˈtʃæptə/",
+    "translation": "rozdział"
+  },
+  {
+    "english": "character",
+    "phonetic": "/ˈkærɪktə/",
+    "translation": "postać"
+  },
+  {
+    "english": "classic",
+    "phonetic": "/ˈklæsɪk/",
+    "translation": "klasyk"
+  },
+  {
+    "english": "column",
+    "phonetic": "/ˈkɒləm/",
+    "translation": "kolumna"
+  },
+  {
+    "english": "episode",
+    "phonetic": "/ˈepɪsəʊd/",
+    "translation": "odcinek"
+  },
+  {
+    "english": "essay",
+    "phonetic": "/ˈeseɪ/",
+    "translation": "esej"
+  },
+  {
+    "english": "genre",
+    "phonetic": "/ˈʒɒnrə/",
+    "translation": "gatunek (np. lmowy,"
+  },
+  {
+    "english": "impress",
+    "phonetic": "/ɪmˈpres/",
+    "translation": "wzbudzić podziw"
+  },
+  {
+    "english": "magazine",
+    "phonetic": "/ˌmæɡəˈziːn/",
+    "translation": "magazyn, czasopismo"
+  },
+  {
+    "english": "novel",
+    "phonetic": "/ˈnɒvəl/",
+    "translation": "powieść"
+  },
+  {
+    "english": "pharmacy",
+    "phonetic": "/ˈfɑːməsi/",
+    "translation": "apteka"
+  },
+  {
+    "english": "plot",
+    "phonetic": "/plɒt/",
+    "translation": "fabuła"
+  },
+  {
+    "english": "poison",
+    "phonetic": "/ˈpɔɪzən/",
+    "translation": "trucizna"
+  },
+  {
+    "english": "print",
+    "phonetic": "/prɪnt/",
+    "translation": "drukować, druk"
+  },
+  {
+    "english": "publish",
+    "phonetic": "/ˈpʌblɪʃ/",
+    "translation": "wydawać, publikować"
+  },
+  {
+    "english": "review",
+    "phonetic": "/rɪˈvjuː/",
+    "translation": "recenzja"
+  },
+  {
+    "english": "storyteller",
+    "phonetic": "/ˈstɔːriˌtelə/",
+    "translation": "opowiadacz,"
+  },
+  {
+    "english": "tale",
+    "phonetic": "/teɪl/",
+    "translation": "opowieść"
+  },
+  {
+    "english": "thriller",
+    "phonetic": "/ˈθrɪlə/",
+    "translation": "thriller, dreszczowiec"
+  },
+  {
+    "english": "tough",
+    "phonetic": "/tʌf/",
+    "translation": "nieustępliwy, hardy"
+  },
+  {
+    "english": "violence",
+    "phonetic": "/ˈvaɪələns/",
+    "translation": "przemoc"
+  },
+  {
+    "english": "breakfast television",
+    "phonetic": "/ˌbrekfəst ˈtelɪˌvɪʒən/",
+    "translation": "telewizja śniadaniowa"
+  },
+  {
+    "english": "breaking news",
+    "phonetic": "/ˌbreɪkɪŋ ˈnjuːz/",
+    "translation": "wiadomości z ostatniej"
+  },
+  {
+    "english": "channel",
+    "phonetic": "/ˈtʃænəl/",
+    "translation": "kanał"
+  },
+  {
+    "english": "cover",
+    "phonetic": "/ˈkʌvə/",
+    "translation": "relacjonować"
+  },
+  {
+    "english": "daily newspaper",
+    "phonetic": "/ˌdeɪli ˈnjuːzˌpeɪpə/",
+    "translation": "gazeta codzienna, dziennik"
+  },
+  {
+    "english": "documentary",
+    "phonetic": "/ˌdɒkjʊˈmentəri/",
+    "translation": "lm dokumentalny"
+  },
+  {
+    "english": "fake news",
+    "phonetic": "/ˌfeɪk ˈnjuːz/",
+    "translation": "fałszywe wiadomości"
+  },
+  {
+    "english": "front page",
+    "phonetic": "/ˌfrɒnt ˈpeɪdʒ/",
+    "translation": "pierwsza strona (gazety)"
+  },
+  {
+    "english": "headline",
+    "phonetic": "/ˈhedˌlaɪn/",
+    "translation": "nagłówek"
+  },
+  {
+    "english": "interview",
+    "phonetic": "/ˈɪntəˌvjuː/",
+    "translation": "wywiad"
+  },
+  {
+    "english": "journalism",
+    "phonetic": "/ˈdʒɜːnəˌlɪzəm/",
+    "translation": "dziennikarstwo"
+  },
+  {
+    "english": "journalist",
+    "phonetic": "/ˈdʒɜːnəlɪst/",
+    "translation": "dziennikarz"
+  },
+  {
+    "english": "make the headlines",
+    "phonetic": "/ˌmeɪk ðə ˈhedˌlaɪnz/",
+    "translation": "trać na pierwsze strony"
+  },
+  {
+    "english": "network",
+    "phonetic": "/ˈnetˌwɜːk/",
+    "translation": "sieć telewizyjna"
+  },
+  {
+    "english": "news item",
+    "phonetic": "/ˈnjuːz ˌaɪtəm/",
+    "translation": "wiadomość, temat (w wiadomościach)"
+  },
+  {
+    "english": "present",
+    "phonetic": "/prɪˈzent/",
+    "translation": "przedstawiać (informacje)"
+  },
+  {
+    "english": "publisher",
+    "phonetic": "/ˈpʌblɪʃə/",
+    "translation": "wydawca"
+  },
+  {
+    "english": "report",
+    "phonetic": "/rɪˈpɔːt/",
+    "translation": "relacjonować"
+  },
+  {
+    "english": "source",
+    "phonetic": "/sɔːs/",
+    "translation": "źródło"
+  },
+  {
+    "english": "spread",
+    "phonetic": "/spred/",
+    "translation": "rozprzestrzeniać (się)"
+  },
+  {
+    "english": "viewer",
+    "phonetic": "/ˈvjuːə/",
+    "translation": "widz"
+  },
+  {
+    "english": "adverb",
+    "phonetic": "/ˈædvɜːb/",
+    "translation": "przysłówek"
+  },
+  {
+    "english": "decode",
+    "phonetic": "/diːˈkəʊd/",
+    "translation": "odszyfrować"
+  },
+  {
+    "english": "downstairs",
+    "phonetic": "/ˌdaʊnˈsteəz/",
+    "translation": "na dole, piętro niżej"
+  },
+  {
+    "english": "encrypt",
+    "phonetic": "/ɪnˈkrɪpt/",
+    "translation": "zakodować, zaszyfrować"
+  },
+  {
+    "english": "eventually",
+    "phonetic": "/ɪˈventʃuəli/",
+    "translation": "ostatecznie, w końcu"
+  },
+  {
+    "english": "inside",
+    "phonetic": "/ɪnˈsaɪd/",
+    "translation": "wewnątrz"
+  },
+  {
+    "english": "manner",
+    "phonetic": "/ˈmænə/",
+    "translation": "sposób"
+  },
+  {
+    "english": "manuscript",
+    "phonetic": "/ˈmænjʊˌskrɪpt/",
+    "translation": "manuskrypt, rękopis"
+  },
+  {
+    "english": "noisily",
+    "phonetic": "/ˈnɔɪzili/",
+    "translation": "hałaśliwie"
+  },
+  {
+    "english": "carve",
+    "phonetic": "/kɑːv/",
+    "translation": "rzeźbić"
+  },
+  {
+    "english": "clue",
+    "phonetic": "/kluː/",
+    "translation": "wskazówka, trop"
+  },
+  {
+    "english": "colonist",
+    "phonetic": "/ˈkɒlənɪst/",
+    "translation": "osadnik, kolonista"
+  },
+  {
+    "english": "establish",
+    "phonetic": "/ɪˈstæblɪʃ/",
+    "translation": "założyć, utworzyć"
+  },
+  {
+    "english": "fence",
+    "phonetic": "/fens/",
+    "translation": "ogrodzenie"
+  },
+  {
+    "english": "rock",
+    "phonetic": "/rɒk/",
+    "translation": "kołysać, bujać"
+  },
+  {
+    "english": "rope",
+    "phonetic": "/rəʊp/",
+    "translation": "lina, sznur"
+  },
+  {
+    "english": "coincidence",
+    "phonetic": "/kəʊˈɪnsɪdəns/",
+    "translation": "zbieg okoliczności"
+  },
+  {
+    "english": "curse",
+    "phonetic": "/kɜːs/",
+    "translation": "klątwa"
+  },
+  {
+    "english": "pharaoh",
+    "phonetic": "/ˈfeərəʊ/",
+    "translation": "faraon"
+  },
+  {
+    "english": "tomb",
+    "phonetic": "/tuːm/",
+    "translation": "grobowiec"
+  },
+  {
+    "english": "curiosity",
+    "phonetic": "/ˌkjʊəriˈɒsə/",
+    "translation": "ciekawość"
+  },
+  {
+    "english": "exhausted",
+    "phonetic": "/ɪɡˈzɔːstɪd/",
+    "translation": "wyczerpany"
+  },
+  {
+    "english": "Flemish",
+    "phonetic": "/ˈemɪʃ/",
+    "translation": "Flamand, amandzki"
+  },
+  {
+    "english": "freezing",
+    "phonetic": "/ˈfriːzɪŋ/",
+    "translation": "mroźny, lodowaty"
+  },
+  {
+    "english": "be fond of",
+    "phonetic": "/bi ˈfɒnd əv/",
+    "translation": "lubić (coś/kogoś), darzyć (kogoś) sympaą"
+  },
+  {
+    "english": "reign",
+    "phonetic": "/reɪn/",
+    "translation": "panowanie"
+  },
+  {
+    "english": "silent",
+    "phonetic": "/ˈsaɪlənt/",
+    "translation": "milczący"
+  },
+  {
+    "english": "unravel",
+    "phonetic": "/ʌnˈrævəl/",
+    "translation": "rozwiązywać, rozwikłać"
+  }
+]

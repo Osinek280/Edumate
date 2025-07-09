@@ -1,0 +1,587 @@
+[
+  {
+    "english": "amp/amplier",
+    "phonetic": "/æmp/ˈæmplɪˌfaɪə/",
+    "translation": "wzmacniacz"
+  },
+  {
+    "english": "audience",
+    "phonetic": "/ˈɔːdiəns/",
+    "translation": "widownia, słuchacze"
+  },
+  {
+    "english": "audion",
+    "phonetic": "/ɔːˈdɪʃən/",
+    "translation": "przesłuchanie, casng"
+  },
+  {
+    "english": "cello",
+    "phonetic": "/ˈtʃeləʊ/",
+    "translation": "wiolonczela"
+  },
+  {
+    "english": "cheer",
+    "phonetic": "/tʃɪə/",
+    "translation": "wiwatować, wznosić"
+  },
+  {
+    "english": "classical music",
+    "phonetic": "/ˌklæsɪkəl ˈmjuːzɪk/",
+    "translation": "muzyka klasyczna"
+  },
+  {
+    "english": "compose",
+    "phonetic": "/kəmˈpəʊz/",
+    "translation": "komponować"
+  },
+  {
+    "english": "composer",
+    "phonetic": "/kəmˈpəʊzə/",
+    "translation": "ściągać z Internetu"
+  },
+  {
+    "english": "conductor",
+    "phonetic": "/kənˈdʌktə/",
+    "translation": "ściągać z Internetu"
+  },
+  {
+    "english": "DJ",
+    "phonetic": "/ˈdiːˌdʒeɪ/",
+    "translation": "ściągać z Internetu"
+  },
+  {
+    "english": "download",
+    "phonetic": "/ˌdaʊnˈləʊd/",
+    "translation": "ściągać z Internetu"
+  },
+  {
+    "english": "ute",
+    "phonetic": "/uːt/",
+    "translation": "et"
+  },
+  {
+    "english": "headphones",
+    "phonetic": "/ˈhedˌfəʊnz/",
+    "translation": "słuchawki"
+  },
+  {
+    "english": "hit album",
+    "phonetic": "/ˌhɪt ˈælbəm/",
+    "translation": "zainspirować, natchnąć"
+  },
+  {
+    "english": "inspire",
+    "phonetic": "/ɪnˈspaɪə/",
+    "translation": "zainspirować, natchnąć"
+  },
+  {
+    "english": "mike",
+    "phonetic": "/maɪk/",
+    "translation": "redukujący hałas"
+  },
+  {
+    "english": "noise-cancelling",
+    "phonetic": "/ˈnɔɪz ˌkænsəlɪŋ/",
+    "translation": "redukujący hałas"
+  },
+  {
+    "english": "percussion",
+    "phonetic": "/pəˈkʌʃən/",
+    "translation": "perkusja"
+  },
+  {
+    "english": "read music",
+    "phonetic": "/ˌriːd ˈmjuːzɪk/",
+    "translation": "czytać nuty"
+  },
+  {
+    "english": "rehearsal",
+    "phonetic": "/rɪˈhɜːsəl/",
+    "translation": "rytmiczny"
+  },
+  {
+    "english": "repertoire",
+    "phonetic": "/ˈrepəˌtwɑː/",
+    "translation": "rytmiczny"
+  },
+  {
+    "english": "rhythm",
+    "phonetic": "/ˈrɪðəm/",
+    "translation": "rytmiczny"
+  },
+  {
+    "english": "rhythmical",
+    "phonetic": "/ˈrɪðmɪkəl/",
+    "translation": "rytmiczny"
+  },
+  {
+    "english": "sing karaoke",
+    "phonetic": "/ˌsɪŋ ˌkæriˈəʊki/",
+    "translation": "śpiewać karaoke"
+  },
+  {
+    "english": "songwriter",
+    "phonetic": "/ˈsɒŋˌraɪtə/",
+    "translation": "inżynier dźwięku"
+  },
+  {
+    "english": "sound engineer",
+    "phonetic": "/ˈsaʊnd ˌendʒɪˌnɪə/",
+    "translation": "inżynier dźwięku"
+  },
+  {
+    "english": "sound system",
+    "phonetic": "/ˈsaʊnd ˌsɪstəm/",
+    "translation": "nagłośnienie"
+  },
+  {
+    "english": "soundtrack",
+    "phonetic": "/ˈsaʊndˌtræk/",
+    "translation": "ścieżka dźwiękowa"
+  },
+  {
+    "english": "speaker",
+    "phonetic": "/ˈspiːkə/",
+    "translation": "głośnik"
+  },
+  {
+    "english": "stream",
+    "phonetic": "/striːm/",
+    "translation": "streamować"
+  },
+  {
+    "english": "talented",
+    "phonetic": "/ˈtæləntɪd/",
+    "translation": "motyw muzyczny"
+  },
+  {
+    "english": "theme music",
+    "phonetic": "/ˈθiːm ˌmjuːzɪk/",
+    "translation": "motyw muzyczny"
+  },
+  {
+    "english": "trumpet",
+    "phonetic": "/ˈtrʌmpɪt/",
+    "translation": "trąbka"
+  },
+  {
+    "english": "turn the volume down",
+    "phonetic": "/ˌtɜːn ðə ˌvɒljuːm ˈdaʊn/",
+    "translation": "ściszyć"
+  },
+  {
+    "english": "turn the volume up",
+    "phonetic": "/ˌtɜːn ðə ˌvɒljuːm ˈʌp/",
+    "translation": "podgłośnić"
+  },
+  {
+    "english": "choir",
+    "phonetic": "/kwaɪə/",
+    "translation": "chór"
+  },
+  {
+    "english": "mentor",
+    "phonetic": "/ˈmentɔː/",
+    "translation": "być mentorem"
+  },
+  {
+    "english": "music producer",
+    "phonetic": "/ˈmjuːzɪk prəˌdjuːsə/",
+    "translation": "producent muzyczny"
+  },
+  {
+    "english": "psychedelic rap",
+    "phonetic": "/ˌsaɪkəˌdelɪk ˈræp/",
+    "translation": "rap psychodeliczny"
+  },
+  {
+    "english": "acvate",
+    "phonetic": "/ˈæktɪveɪt/",
+    "translation": "aktywować"
+  },
+  {
+    "english": "alert",
+    "phonetic": "/əˈlɜːt/",
+    "translation": "czujny, uważny"
+  },
+  {
+    "english": "aend",
+    "phonetic": "/əˈtend/",
+    "translation": "uczęszczać"
+  },
+  {
+    "english": "chemical",
+    "phonetic": "/ˈkemɪkəl/",
+    "translation": "związek chemiczny"
+  },
+  {
+    "english": "concentrate",
+    "phonetic": "/ˈkɒnsənˌtreɪt/",
+    "translation": "koncentrować się"
+  },
+  {
+    "english": "distract",
+    "phonetic": "/dɪˈstrækt/",
+    "translation": "ozpraszać, odciągać uwagę"
+  },
+  {
+    "english": "r",
+    "phonetic": "/ˈdəʊpəmiːn/",
+    "translation": "wydajnie, efektywnie"
+  },
+  {
+    "english": "dopamine",
+    "phonetic": "/ˈdəʊpəmiːn/",
+    "translation": "wydajnie, efektywnie"
+  },
+  {
+    "english": "eciently",
+    "phonetic": "/ɪˈfɪʃəntli/",
+    "translation": "wydajnie, efektywnie"
+  },
+  {
+    "english": "x",
+    "phonetic": "/fɪks/",
+    "translation": "naprawić"
+  },
+  {
+    "english": "focus",
+    "phonetic": "/ˈfəʊkəs/",
+    "translation": "skupić się"
+  },
+  {
+    "english": "improve",
+    "phonetic": "/ɪmˈpruːv/",
+    "translation": "polepszyć (się)"
+  },
+  {
+    "english": "knowledge",
+    "phonetic": "/ˈnɒlɪdʒ/",
+    "translation": "umiejętności językowe"
+  },
+  {
+    "english": "language abilies",
+    "phonetic": "/ˈlæŋɡwɪdʒ əˌbɪləz/",
+    "translation": "umiejętności językowe"
+  },
+  {
+    "english": "lifelong learning",
+    "phonetic": "/ˌlaɪfˌlɒŋ ˈlɜːnɪŋ/",
+    "translation": "nauka przez całe życie"
+  },
+  {
+    "english": "memory",
+    "phonetic": "/ˈmeməri/",
+    "translation": "pamięć"
+  },
+  {
+    "english": "movement",
+    "phonetic": "/ˈmuːvmənt/",
+    "translation": "ruch"
+  },
+  {
+    "english": "process",
+    "phonetic": "/ˈprəʊses/",
+    "translation": "przetwarzać"
+  },
+  {
+    "english": "resolve",
+    "phonetic": "/rɪˈzɒlv/",
+    "translation": "powtarzać,"
+  },
+  {
+    "english": "revise",
+    "phonetic": "/rɪˈvaɪz/",
+    "translation": "powtarzać,"
+  },
+  {
+    "english": "smulate",
+    "phonetic": "/ˈstɪmjʊleɪt/",
+    "translation": "stymulować"
+  },
+  {
+    "english": "strengthen",
+    "phonetic": "/ˈstreŋθən/",
+    "translation": "wzmacniać"
+  },
+  {
+    "english": "busker",
+    "phonetic": "/ˈbʌskə/",
+    "translation": "artysta uliczny"
+  },
+  {
+    "english": "catchy melody",
+    "phonetic": "/ˌkætʃi ˈmelədi/",
+    "translation": "chwytliwa melodia"
+  },
+  {
+    "english": "concert hall",
+    "phonetic": "/ˈkɒnsət hɔːl/",
+    "translation": "sala koncertowa"
+  },
+  {
+    "english": "contemporary",
+    "phonetic": "/kənˈtempərəri/",
+    "translation": "współczesny"
+  },
+  {
+    "english": "cover version",
+    "phonetic": "/ˈkʌvə ˌvɜːʃən/",
+    "translation": "przeróbka muzyczna, cover"
+  },
+  {
+    "english": "current",
+    "phonetic": "/ˈkʌrənt/",
+    "translation": "bieżący"
+  },
+  {
+    "english": "entertain",
+    "phonetic": "/ˌentəˈteɪn/",
+    "translation": "zabawiać"
+  },
+  {
+    "english": "folk band",
+    "phonetic": "/ˈfəʊk bænd/",
+    "translation": "zespół ludowy"
+  },
+  {
+    "english": "lead singer",
+    "phonetic": "/ˌliːd ˈsɪŋə/",
+    "translation": "główny wokalista"
+  },
+  {
+    "english": "live album",
+    "phonetic": "/ˌlaɪv ˈælbəm/",
+    "translation": "album koncertowy"
+  },
+  {
+    "english": "live performance",
+    "phonetic": "/ˌlaɪv pəˈfɔːməns/",
+    "translation": "koncert, występ"
+  },
+  {
+    "english": "on tour",
+    "phonetic": "/ˌɒn ˈtʊə/",
+    "translation": "na trasie (koncertowej)"
+  },
+  {
+    "english": "open-air fesval",
+    "phonetic": "/ˌəʊpənˌeə ˈfestɪvəl/",
+    "translation": "feswal na wolnym"
+  },
+  {
+    "english": "orchestra",
+    "phonetic": "/ˈɔːkɪstrə/",
+    "translation": "występować"
+  },
+  {
+    "english": "perform",
+    "phonetic": "/pəˈfɔːm/",
+    "translation": "występować"
+  },
+  {
+    "english": "record",
+    "phonetic": "/rɪˈkɔːd/",
+    "translation": "nagrywać"
+  },
+  {
+    "english": "release",
+    "phonetic": "/rɪˈliːs/",
+    "translation": "wypuszczać na rynek"
+  },
+  {
+    "english": "song lyrics",
+    "phonetic": "/ˈsɒŋ ˌlɪrɪks/",
+    "translation": "jakość dźwięku"
+  },
+  {
+    "english": "sound quality",
+    "phonetic": "/ˈsaʊnd ˌkwɒlɪ/",
+    "translation": "jakość dźwięku"
+  },
+  {
+    "english": "support band",
+    "phonetic": "/səˈpɔːt ˌbænd/",
+    "translation": "zespół występujący przed koncertem głównej"
+  },
+  {
+    "english": "tour",
+    "phonetic": "/tʊə/",
+    "translation": "podróżować, jechać w trasę koncertową"
+  },
+  {
+    "english": "voice",
+    "phonetic": "/vɔɪs/",
+    "translation": "głos"
+  },
+  {
+    "english": "anger",
+    "phonetic": "/ˈæŋɡə/",
+    "translation": "spokojny"
+  },
+  {
+    "english": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "translation": "spokojny"
+  },
+  {
+    "english": "bored",
+    "phonetic": "/ˈbɔːd/",
+    "translation": "spokojny"
+  },
+  {
+    "english": "boredom",
+    "phonetic": "/ˈbɔːdəm/",
+    "translation": "spokojny"
+  },
+  {
+    "english": "calm",
+    "phonetic": "/kɑːm/",
+    "translation": "spokojny"
+  },
+  {
+    "english": "calmness",
+    "phonetic": "/ˈkɑːmnəs/",
+    "translation": "spokojny, spokój"
+  },
+  {
+    "english": "content",
+    "phonetic": "/kənˈtent/",
+    "translation": "zawstydzony, zakłopotany"
+  },
+  {
+    "english": "contentment",
+    "phonetic": "/kənˈtentmənt/",
+    "translation": "zawstydzony, zakłopotany"
+  },
+  {
+    "english": "embarrassed",
+    "phonetic": "/ɪmˈbærəst/",
+    "translation": "zawstydzony, zakłopotany"
+  },
+  {
+    "english": "embarrassment",
+    "phonetic": "/ɪmˈbærəsmənt/",
+    "translation": "wstyd, zakłopotanie"
+  },
+  {
+    "english": "fear",
+    "phonetic": "/fɪə/",
+    "translation": "strach"
+  },
+  {
+    "english": "jealous",
+    "phonetic": "/ˈdʒeləs/",
+    "translation": "zazdrość"
+  },
+  {
+    "english": "jealousy",
+    "phonetic": "/ˈdʒeləsi/",
+    "translation": "zazdrość"
+  },
+  {
+    "english": "joy",
+    "phonetic": "/dʒɔɪ/",
+    "translation": "radość"
+  },
+  {
+    "english": "joyful",
+    "phonetic": "/ˈdʒɔɪfəl/",
+    "translation": "życzliwy"
+  },
+  {
+    "english": "kind",
+    "phonetic": "/ˈkaɪnd/",
+    "translation": "życzliwy"
+  },
+  {
+    "english": "kindness",
+    "phonetic": "/ˈkaɪndnəs/",
+    "translation": "życzliwość"
+  },
+  {
+    "english": "opmism",
+    "phonetic": "/ˈɒptɪˌmɪzəm/",
+    "translation": "optymistyczny"
+  },
+  {
+    "english": "opmisc",
+    "phonetic": "/ˌɒptɪˈmɪstɪk/",
+    "translation": "optymistyczny"
+  },
+  {
+    "english": "pessimism",
+    "phonetic": "/ˈpesəˌmɪzəm/",
+    "translation": "pesymistyczny"
+  },
+  {
+    "english": "pessimisc",
+    "phonetic": "/ˌpesəˈmɪstɪk/",
+    "translation": "pesymistyczny"
+  },
+  {
+    "english": "sad",
+    "phonetic": "/sæd/",
+    "translation": "zadowolenie, satysfakcja"
+  },
+  {
+    "english": "sadness",
+    "phonetic": "/ˈsædnəs/",
+    "translation": "zadowolenie, satysfakcja"
+  },
+  {
+    "english": "sasfacon",
+    "phonetic": "/ˌsætɪsˈfækʃən/",
+    "translation": "zadowolenie, satysfakcja"
+  },
+  {
+    "english": "sased",
+    "phonetic": "/ˈsætɪsfaɪd/",
+    "translation": "niespodzianka, zaskoczyć"
+  },
+  {
+    "english": "scared",
+    "phonetic": "/skeəd/",
+    "translation": "niespodzianka, zaskoczyć"
+  },
+  {
+    "english": "surprise",
+    "phonetic": "/səˈpraɪz/",
+    "translation": "niespodzianka, zaskoczyć"
+  },
+  {
+    "english": "surprised",
+    "phonetic": "/səˈpraɪzd/",
+    "translation": "zaskoczony"
+  },
+  {
+    "english": "sympathec",
+    "phonetic": "/ˌsɪmpəˈθetɪk/",
+    "translation": "współczujący, wyrozumiały"
+  },
+  {
+    "english": "sympathy",
+    "phonetic": "/ˈsɪmpəθi/",
+    "translation": "współczucie"
+  },
+  {
+    "english": "balance",
+    "phonetic": "/ˈbæləns/",
+    "translation": "melodia wpadająca w ucho"
+  },
+  {
+    "english": "earworm",
+    "phonetic": "/ˈɪəˌwɜːm/",
+    "translation": "melodia wpadająca w ucho"
+  },
+  {
+    "english": "handstand",
+    "phonetic": "/ˈhændˌstænd/",
+    "translation": "stanie na rękach"
+  },
+  {
+    "english": "mazurka",
+    "phonetic": "/məˈzɜːkə/",
+    "translation": "mazurek (utwór i taniec)"
+  }
+]

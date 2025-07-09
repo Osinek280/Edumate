@@ -1,0 +1,542 @@
+[
+  {
+    "english": "acquaintance",
+    "phonetic": "/əˈkweɪntəns/",
+    "translation": "znajomy"
+  },
+  {
+    "english": "best friend/mate",
+    "phonetic": "/ˌbest ˈfrend/ˈmeɪt/",
+    "translation": "najlepszy przyjaciel"
+  },
+  {
+    "english": "classmate",
+    "phonetic": "/ˈklɑːsˌmeɪt/",
+    "translation": "kolega z klasy"
+  },
+  {
+    "english": "close friend",
+    "phonetic": "/ˌkləʊs ˈfrend/",
+    "translation": "bliski przyjaciel"
+  },
+  {
+    "english": "colleague",
+    "phonetic": "/ˈkɒliːɡ/",
+    "translation": "współpracownik"
+  },
+  {
+    "english": "(dis)honest",
+    "phonetic": "/(dɪs)ˈɒnɪst/",
+    "translation": "(nie)szczery, (nie)uczciwy"
+  },
+  {
+    "english": "(dis)loyal",
+    "phonetic": "/(dɪs)ˈlɔɪəl/",
+    "translation": "(nie)lojalny"
+  },
+  {
+    "english": "enemy",
+    "phonetic": "/ˈenəmi/",
+    "translation": "wróg"
+  },
+  {
+    "english": "atmate (UK)/",
+    "phonetic": "/ˈætˌmeɪt/",
+    "translation": "współlokator"
+  },
+  {
+    "english": "roommate (US)",
+    "phonetic": "ˈruːmˌmeɪt/",
+    "translation": "(nie)dojrzały"
+  },
+  {
+    "english": "(im)mature",
+    "phonetic": "/(ˌɪm)məˈtʃʊə/",
+    "translation": "(nie)dojrzały"
+  },
+  {
+    "english": "(im)paent",
+    "phonetic": "/(ɪm)ˈpeɪʃənt/",
+    "translation": "(nie)cierpliwy"
+  },
+  {
+    "english": "(im)polite",
+    "phonetic": "/(ˌɪm)pəˈlaɪt/",
+    "translation": "(nie)uprzejmy"
+  },
+  {
+    "english": "(in)sensive",
+    "phonetic": "/(ɪn)ˈsensətɪv/",
+    "translation": "(nie)wrażliwy"
+  },
+  {
+    "english": "(in)tolerant",
+    "phonetic": "/(ɪn)ˈtɒlərənt/",
+    "translation": "(nie)tolerancyjny"
+  },
+  {
+    "english": "(ir)responsible",
+    "phonetic": "/(ˌɪ)rɪˈspɒnsəbəl/",
+    "translation": "(nie)odpowiedzialny"
+  },
+  {
+    "english": "next-door neighbour",
+    "phonetic": "/ˌnekstˌdɔː ˈneɪbə/",
+    "translation": "sąsiad (przez ścianę)"
+  },
+  {
+    "english": "opponent",
+    "phonetic": "/əˈpəʊnənt/",
+    "translation": "przeciwnik"
+  },
+  {
+    "english": "relave",
+    "phonetic": "/ˈrelətɪv/",
+    "translation": "krewny"
+  },
+  {
+    "english": "rival",
+    "phonetic": "/ˈraɪvəl/",
+    "translation": "rywal"
+  },
+  {
+    "english": "sibling",
+    "phonetic": "/ˈsɪblɪŋ/",
+    "translation": "rodzeństwo, brat/"
+  },
+  {
+    "english": "stranger",
+    "phonetic": "/ˈstreɪndʒə/",
+    "translation": "nieznajomy"
+  },
+  {
+    "english": "travel buddy",
+    "phonetic": "/ˈtrævəl ˌbʌdi/",
+    "translation": "kompan, towarzysz"
+  },
+  {
+    "english": "(un)friendly",
+    "phonetic": "/(ˌʌn)ˈfrendli/",
+    "translation": "(nie)przyjazny"
+  },
+  {
+    "english": "(un)imaginave",
+    "phonetic": "/(ˌʌn)ɪˈmædʒɪnətɪv/",
+    "translation": "(mało) pomysłowy"
+  },
+  {
+    "english": "(un)kind",
+    "phonetic": "/(ˌʌn)ˈkaɪnd/",
+    "translation": "(nie)życzliwy, (nie)miły"
+  },
+  {
+    "english": "(un)reliable",
+    "phonetic": "/(ˌʌn)rɪˈlaɪəbəl/",
+    "translation": "(nie)rzetelny"
+  },
+  {
+    "english": "(un)sociable",
+    "phonetic": "/(ˌʌn)ˈsəʊʃəbəl/",
+    "translation": "(nie)towarzyski"
+  },
+  {
+    "english": "beard",
+    "phonetic": "/bɪəd/",
+    "translation": "broda"
+  },
+  {
+    "english": "blond/dark hair",
+    "phonetic": "/ˌblɒnd/ˌdɑːk ˈheə/",
+    "translation": "blond/ciemne włosy"
+  },
+  {
+    "english": "bond",
+    "phonetic": "/bɒnd/",
+    "translation": "więź"
+  },
+  {
+    "english": "casual",
+    "phonetic": "/ˈkæʒuəl/",
+    "translation": "przypadkowy"
+  },
+  {
+    "english": "chin",
+    "phonetic": "/tʃɪn/",
+    "translation": "podbródek"
+  },
+  {
+    "english": "doppelganger",
+    "phonetic": "/ˈdɒpəlˌɡæŋə/",
+    "translation": "sobowtór"
+  },
+  {
+    "english": "double",
+    "phonetic": "/ˈdʌbəl/",
+    "translation": "sobowtór, dubler"
+  },
+  {
+    "english": "facial features",
+    "phonetic": "/ˌfeɪʃəl ˈːtʃəz/",
+    "translation": "rysy twarzy"
+  },
+  {
+    "english": "fair skin",
+    "phonetic": "/ˌfeə ˈskɪn/",
+    "translation": "jasna karnacja"
+  },
+  {
+    "english": "full/thin lips",
+    "phonetic": "/ˌfʊl/ˌθɪn ˈlɪps/",
+    "translation": "pełne/wąskie usta"
+  },
+  {
+    "english": "ginger",
+    "phonetic": "/ˈdʒɪndʒə/",
+    "translation": "rudy (kolor)"
+  },
+  {
+    "english": "hairstyle",
+    "phonetic": "/ˈheəˌstaɪl/",
+    "translation": "fryzura, uczesanie"
+  },
+  {
+    "english": "heavy make-up",
+    "phonetic": "/ˌhevi ˈmeɪkˌʌp/",
+    "translation": "mocny makijaż"
+  },
+  {
+    "english": "lookalike",
+    "phonetic": "/ˈlʊkəˌlaɪk/",
+    "translation": "sobowtór"
+  },
+  {
+    "english": "matching outts",
+    "phonetic": "/ˌmætʃɪŋ ˈaʊtˌfɪts/",
+    "translation": "pasujące stroje"
+  },
+  {
+    "english": "oval-shaped",
+    "phonetic": "/ˈəʊvəlˌʃeɪpt/",
+    "translation": "owalny"
+  },
+  {
+    "english": "pale",
+    "phonetic": "/peɪl/",
+    "translation": "blady"
+  },
+  {
+    "english": "physical appearance",
+    "phonetic": "/ˌfɪzɪkəl əˈpɪərəns/",
+    "translation": "wygląd zewnętrzny"
+  },
+  {
+    "english": "ponytail",
+    "phonetic": "/ˈpəʊniˌteɪl/",
+    "translation": "kucyk (upięcie włosów)"
+  },
+  {
+    "english": "put your hair up",
+    "phonetic": "/ˌpʊt jə ˈheər ˌʌp/",
+    "translation": "związać/upiąć włosy"
+  },
+  {
+    "english": "similar",
+    "phonetic": "/ˈsɪmɪlə/",
+    "translation": "podobny"
+  },
+  {
+    "english": "thick eyebrows",
+    "phonetic": "/ˌθɪk ˈaɪˌbraʊz/",
+    "translation": "grube brwi"
+  },
+  {
+    "english": "wide smile",
+    "phonetic": "/ˌwaɪd ˈsmaɪl/",
+    "translation": "szeroki uśmiech"
+  },
+  {
+    "english": "annoy",
+    "phonetic": "/əˈnɔɪ/",
+    "translation": "denerwować"
+  },
+  {
+    "english": "apologise",
+    "phonetic": "/əˈpɒlədʒaɪz/",
+    "translation": "przepraszać"
+  },
+  {
+    "english": "be/get annoyed",
+    "phonetic": "/ˌbi/ˌɡet əˈnɔɪd",
+    "translation": "zdenerwować się"
+  },
+  {
+    "english": "be on good terms",
+    "phonetic": "/ˌbi ɒn ˌɡʊd ˈtɜːmz",
+    "translation": "być w dobrych"
+  },
+  {
+    "english": "(with sb)",
+    "phonetic": "(wɪð ˌsʌmbədi)/",
+    "translation": "relacjach"
+  },
+  {
+    "english": "be/get upset (with sb)",
+    "phonetic": "/ˌbi/ˌɡet ʌpˈset",
+    "translation": "zdenerwować się"
+  },
+  {
+    "english": "behaviour",
+    "phonetic": "/bɪˈheɪvjə/",
+    "translation": "zachowanie"
+  },
+  {
+    "english": "BFF = best friend",
+    "phonetic": "/ˌbiː ˌef ˈef/ˌbest ˌfrend",
+    "translation": "najlepszy przyjaciel"
+  },
+  {
+    "english": "forever",
+    "phonetic": "fərˈevə/",
+    "translation": "(na zawsze)"
+  },
+  {
+    "english": "childish",
+    "phonetic": "/ˈtʃaɪldɪʃ/",
+    "translation": "dziecinny"
+  },
+  {
+    "english": "compromise",
+    "phonetic": "/ˈkɒmprəmaɪz/",
+    "translation": "kompromis"
+  },
+  {
+    "english": "convince",
+    "phonetic": "/kənˈvɪns/",
+    "translation": "przekonać"
+  },
+  {
+    "english": "disagree",
+    "phonetic": "/ˌdɪsəˈɡriː/",
+    "translation": "nie zgadzać się"
+  },
+  {
+    "english": "forgive",
+    "phonetic": "/fəˈɡɪv/",
+    "translation": "wybaczyć"
+  },
+  {
+    "english": "get into a ght",
+    "phonetic": "/ˌɡet ˌɪntu: ə ˈfaɪt/",
+    "translation": "pokłócić się"
+  },
+  {
+    "english": "get nervous",
+    "phonetic": "/ˌɡet ˈnɜːvəs/",
+    "translation": "spiąć się, stać się"
+  },
+  {
+    "english": "get on sb’s nerves",
+    "phonetic": "/ˌɡet ɒn ˌsʌmbədiz ˈnɜːvz/",
+    "translation": "denerwować kogoś"
+  },
+  {
+    "english": "give in",
+    "phonetic": "/ˌɡɪv ˈɪn/",
+    "translation": "ustąpić"
+  },
+  {
+    "english": "handle",
+    "phonetic": "/ˈhændəl/",
+    "translation": "radzić sobie"
+  },
+  {
+    "english": "have a disagreement",
+    "phonetic": "/ˌhæv ə ˌdɪsəˈɡriːmənt",
+    "translation": "nie zgadzać się z kimś,"
+  },
+  {
+    "english": "(about sth)",
+    "phonetic": "əˌbaʊt ˌsʌmθɪŋ)/",
+    "translation": "mieć z kimś różnicę zdań"
+  },
+  {
+    "english": "have an argument",
+    "phonetic": "/ˌhæv ən ˈɑːɡjʊmənt/",
+    "translation": "pokłócić się"
+  },
+  {
+    "english": "have had enough",
+    "phonetic": "/ˌhæv hæd ɪˈnʌf/",
+    "translation": "mieć dość"
+  },
+  {
+    "english": "hurt",
+    "phonetic": "/hɜːt/",
+    "translation": "zranić"
+  },
+  {
+    "english": "hurul",
+    "phonetic": "/ˈhɜːəl/",
+    "translation": "przykry, raniący"
+  },
+  {
+    "english": "irritated",
+    "phonetic": "/ˈɪrɪˌteɪtɪd/",
+    "translation": "poirytowany"
+  },
+  {
+    "english": "make friends",
+    "phonetic": "/ˌmeɪk ˈfrendz/",
+    "translation": "zaprzyjaźnić się"
+  },
+  {
+    "english": "make up (with sb)",
+    "phonetic": "/ˌmeɪk ˈʌp (wɪð ˌsʌmbədi)/",
+    "translation": "pogodzić się (z kimś)"
+  },
+  {
+    "english": "relaonship",
+    "phonetic": "/rɪˈleɪʃənʃɪp/",
+    "translation": "relacja, związek"
+  },
+  {
+    "english": "trust",
+    "phonetic": "/trʌst/",
+    "translation": "ufać"
+  },
+  {
+    "english": "avoid",
+    "phonetic": "/əˈvɔɪd/",
+    "translation": "unikać"
+  },
+  {
+    "english": "bese",
+    "phonetic": "/ˈbes/",
+    "translation": "najlepsza przyjaciółka"
+  },
+  {
+    "english": "brutally honest",
+    "phonetic": "/ˌbruːtəli ˈɒnɪst/",
+    "translation": "brutalnie szczery"
+  },
+  {
+    "english": "cheer sb up",
+    "phonetic": "/ˌtʃɪə ˌsʌmbədi ˈʌp/",
+    "translation": "rozweselić kogoś"
+  },
+  {
+    "english": "comfort zone",
+    "phonetic": "/ˈkʌmfət ˌzəʊn/",
+    "translation": "strefa komfortu"
+  },
+  {
+    "english": "cray",
+    "phonetic": "/ˈkrɑːi/",
+    "translation": "pomysłowy, zmyślny"
+  },
+  {
+    "english": "encourage",
+    "phonetic": "/ɪnˈkʌrɪdʒ/",
+    "translation": "zachęcać"
+  },
+  {
+    "english": "fake",
+    "phonetic": "/feɪk/",
+    "translation": "nieprawdziwy"
+  },
+  {
+    "english": "friendship",
+    "phonetic": "/ˈfrendʃɪp/",
+    "translation": "przyjaźń"
+  },
+  {
+    "english": "get on well (with sb)",
+    "phonetic": "/ˌɡet ˌɒn ˈwel",
+    "translation": "dogadywać się (z kimś)"
+  },
+  {
+    "english": "hang out (with sb)",
+    "phonetic": "/ˌhæŋ ˈaʊt (wɪð ˌsʌmbədi)/",
+    "translation": "spędzać z kimś czas"
+  },
+  {
+    "english": "judge",
+    "phonetic": "/dʒʌdʒ/",
+    "translation": "oceniać, osądzać"
+  },
+  {
+    "english": "keep in touch",
+    "phonetic": "/ˌkiːp ɪn ˈtʌtʃ/",
+    "translation": "być w kontakcie"
+  },
+  {
+    "english": "layer",
+    "phonetic": "/ˈleɪə/",
+    "translation": "warstwa"
+  },
+  {
+    "english": "let sb down",
+    "phonetic": "/ˌlet ˌsʌmbədi ˈdaʊn/",
+    "translation": "zawieść kogoś"
+  },
+  {
+    "english": "lie",
+    "phonetic": "/laɪ/",
+    "translation": "kłamać"
+  },
+  {
+    "english": "make sb laugh",
+    "phonetic": "/ˌmeɪk ˌsʌmbədi ˈlɑːf/",
+    "translation": "rozśmieszyć kogoś"
+  },
+  {
+    "english": "plain",
+    "phonetic": "/pleɪn/",
+    "translation": "po prostu"
+  },
+  {
+    "english": "shared interest",
+    "phonetic": "/ˌʃeəd ˈɪntrəst/",
+    "translation": "wspólne zainteresowania"
+  },
+  {
+    "english": "support",
+    "phonetic": "/səˈpɔːt/",
+    "translation": "wspierać"
+  },
+  {
+    "english": "tell the truth",
+    "phonetic": "/ˌtel ðə ˈtruːθ/",
+    "translation": "mówić prawdę"
+  },
+  {
+    "english": "the life and soul",
+    "phonetic": "/ðə ˌlaɪf ən ˌsəʊl",
+    "translation": "dusza towarzystwa"
+  },
+  {
+    "english": "of the party",
+    "phonetic": "əv ðə ˈpɑː/",
+    "translation": "ze znajomościami,"
+  },
+  {
+    "english": "well-connected",
+    "phonetic": "/ˌwel kəˈnektɪd/",
+    "translation": "ze znajomościami,"
+  },
+  {
+    "english": "couple",
+    "phonetic": "/ˈkʌpəl/",
+    "translation": "para, związek"
+  },
+  {
+    "english": "IRL = in real life",
+    "phonetic": "/ˌaɪ ˌɑːr ˈel/ɪn ˌriːl ˈlaɪf/",
+    "translation": "w świecie realnym"
+  },
+  {
+    "english": "paern",
+    "phonetic": "/ˈpætən/",
+    "translation": "wzór"
+  }
+]
