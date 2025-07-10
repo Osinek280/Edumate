@@ -26,7 +26,7 @@ public class Unit {
 
   @Lob
   @Column(name = "wordlist_image")
-  private byte[] reviewImage;
+  private byte[] wordlistImage;
 
   @ManyToMany(mappedBy = "units")
   private Set<Vocabulary> vocabularySet;

@@ -29,7 +29,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class DataSeeder {
   @Autowired
@@ -56,7 +56,6 @@ public class DataSeeder {
 
   @PostConstruct
   public void init() throws Exception {
-    // Tworzymy książkę
     Book impulse3 = Book.builder()
         .title("Impulse 3 B1+")
         .isbn("9788381523950")
