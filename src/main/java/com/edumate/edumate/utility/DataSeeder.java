@@ -54,7 +54,7 @@ public class DataSeeder {
 //    importVocabularyFromCsv();
   }
 
-  @PostConstruct
+//  @PostConstruct
   public void init() throws Exception {
     Book impulse3 = Book.builder()
         .title("Impulse 3 B1+")

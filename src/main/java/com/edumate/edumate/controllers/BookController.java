@@ -8,6 +8,7 @@ import com.edumate.edumate.repositories.BookRepository;
 import com.edumate.edumate.repositories.UnitRepository;
 import com.edumate.edumate.repositories.Vocabulary.VocabularyRepository;
 import com.edumate.edumate.utility.JsonWord;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -72,5 +73,30 @@ public class BookController {
     Unit savedUnit = unitRepository.save(unit);
 
     return ResponseEntity.ok(savedUnit);
+  }
+
+  @PostMapping("units/{unitId}/vocabulary")
+  public ResponseEntity<?> addVocabularyToUnit(
+      @PathVariable Integer unitId,
+      @RequestBody @Valid List<JsonWord> vocabularyRequests) {
+
+    Unit unit = unitRepository.findById(unitId)
+        .orElseThrow(() -> new RuntimeException("Unit not found with id: " + unitId));
+
+    List<Vocabulary> vocabularies = vocabularyRequests.stream()
+        .map(request -> {
+          Vocabulary vocabulary = new Vocabulary();
+          vocabulary.setWord(request.getEnglish());
+          vocabulary.setPhonetic(request.getPhonetic());
+          vocabulary.setTranslation(request.getTranslation());
+          vocabulary.setLevel(Level.B1);
+          vocabulary.addUnit(unit);
+          return vocabulary;
+        })
+        .collect(Collectors.toList());
+
+    vocabularyRepository.saveAll(vocabularies);
+
+    return ResponseEntity.ok().build();
   }
 }
