@@ -73,16 +73,4 @@ public class BookController {
 
     return ResponseEntity.ok(savedUnit);
   }
-
-  // --- Dodawanie unit do książki ---
-  @PostMapping("/{bookId}/units")
-  public ResponseEntity<Unit> addUnitToBook(@PathVariable Integer bookId, @RequestBody Unit unit) {
-    return bookRepository.findById(bookId)
-        .map(book -> {
-          unit.setBook(book);
-          Unit saved = unitRepository.save(unit);
-          return ResponseEntity.status(HttpStatus.CREATED).body(saved);
-        })
-        .orElse(ResponseEntity.notFound().build());
-  }
 }
