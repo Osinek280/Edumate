@@ -7,31 +7,29 @@ import com.edumate.edumate.entities.vocabulary.Vocabulary;
 import com.edumate.edumate.repositories.BookRepository;
 import com.edumate.edumate.repositories.UnitRepository;
 import com.edumate.edumate.repositories.Vocabulary.VocabularyRepository;
+import com.edumate.edumate.services.BookService;
 import com.edumate.edumate.utility.JsonWord;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
+import org.springdoc.core.annotations.ParameterObject;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
 @RequiredArgsConstructor
 public class BookController {
 
-  private final BookRepository bookRepository;
-  private final UnitRepository unitRepository;
-  private final VocabularyRepository vocabularyRepository;
+  private final BookService bookService;
 
-  // books
   @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
   public ResponseEntity<Book> createBook(
       @RequestParam String title,
@@ -39,20 +37,17 @@ public class BookController {
       @RequestParam String authors,
       @RequestParam(required = false) MultipartFile coverImage
   ) throws IOException {
-    Book book = Book.builder()
-        .title(title)
-        .isbn(isbn)
-        .authors(authors)
-        .coverImage(coverImage != null ? coverImage.getBytes() : null)
-        .build();
-
-    Book savedBook = bookRepository.save(book);
+    Book savedBook = bookService.createBook(title, isbn, authors, coverImage);
     return ResponseEntity.ok(savedBook);
   }
 
   @GetMapping
-  public ResponseEntity<List<Book>> getAllBooks() {
-    return ResponseEntity.ok(bookRepository.findAll());
+  public ResponseEntity<List<Book>> getAllBooks(
+      @RequestParam(required = false) String search,
+      @ParameterObject Pageable pageable
+  ) {
+    List<Book> books = bookService.getAllBooks(pageable, search);
+    return ResponseEntity.ok(books);
   }
 
   @PostMapping(path = "/{bookId}/unit", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -61,17 +56,7 @@ public class BookController {
       @RequestParam Integer unitNumber,
       @RequestParam(required = false) MultipartFile wordlistImage
   ) throws IOException {
-    Book book = bookRepository.findById(bookId)
-        .orElseThrow(() -> new RuntimeException("Book not found"));
-
-    Unit unit = Unit.builder()
-        .unitNumber(unitNumber)
-        .book(book)
-        .wordlistImage(wordlistImage != null ? wordlistImage.getBytes() : null)
-        .build();
-
-    Unit savedUnit = unitRepository.save(unit);
-
+    Unit savedUnit = bookService.addUnitToBook(bookId, unitNumber, wordlistImage);
     return ResponseEntity.ok(savedUnit);
   }
 
@@ -79,24 +64,7 @@ public class BookController {
   public ResponseEntity<?> addVocabularyToUnit(
       @PathVariable Integer unitId,
       @RequestBody @Valid List<JsonWord> vocabularyRequests) {
-
-    Unit unit = unitRepository.findById(unitId)
-        .orElseThrow(() -> new RuntimeException("Unit not found with id: " + unitId));
-
-    List<Vocabulary> vocabularies = vocabularyRequests.stream()
-        .map(request -> {
-          Vocabulary vocabulary = new Vocabulary();
-          vocabulary.setWord(request.getEnglish());
-          vocabulary.setPhonetic(request.getPhonetic());
-          vocabulary.setTranslation(request.getTranslation());
-          vocabulary.setLevel(Level.B1);
-          vocabulary.addUnit(unit);
-          return vocabulary;
-        })
-        .collect(Collectors.toList());
-
-    vocabularyRepository.saveAll(vocabularies);
-
+    bookService.addVocabularyToUnit(unitId, vocabularyRequests);
     return ResponseEntity.ok().build();
   }
 }
