@@ -1,5 +1,6 @@
 package com.edumate.edumate.controllers;
 
+import com.edumate.edumate.dto.BookWithUnitsDTO;
 import com.edumate.edumate.entities.books.Book;
 import com.edumate.edumate.entities.books.Unit;
 import com.edumate.edumate.entities.vocabulary.Level;
@@ -48,6 +49,13 @@ public class BookController {
   ) {
     List<Book> books = bookService.getAllBooks(pageable, search);
     return ResponseEntity.ok(books);
+  }
+
+  @GetMapping(path = "/{bookId}/unit")
+  public ResponseEntity<BookWithUnitsDTO> getUnitsWithBook(
+      @PathVariable Integer bookId
+  ) throws IOException {
+    return ResponseEntity.ok(bookService.getUnitsWithBook(bookId));
   }
 
   @PostMapping(path = "/{bookId}/unit", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)

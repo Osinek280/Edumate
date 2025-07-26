@@ -62,7 +62,6 @@ public class Unit {
     return getClass().hashCode();
   }
 
-  // Metody pomocnicze do zarządzania relacjami
   public void addVocabulary(Vocabulary vocabulary) {
     this.vocabularySet.add(vocabulary);
     vocabulary.getUnits().add(this);

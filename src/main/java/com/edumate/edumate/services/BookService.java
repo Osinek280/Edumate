@@ -1,5 +1,7 @@
 package com.edumate.edumate.services;
 
+import com.edumate.edumate.dto.BookWithUnitsDTO;
+import com.edumate.edumate.dto.BookWithoutCoverDTO;
 import com.edumate.edumate.entities.books.Book;
 import com.edumate.edumate.entities.books.Unit;
 import com.edumate.edumate.entities.vocabulary.Level;
@@ -44,6 +46,14 @@ public class BookService {
       return bookRepository.findByTitleContainingIgnoreCase(searchQuery, pageable).getContent();
     }
     return bookRepository.findAll(pageable).getContent();
+  }
+
+  @Transactional
+  public BookWithUnitsDTO getUnitsWithBook(Integer bookId) {
+    Book book = bookRepository.findById(bookId)
+        .orElseThrow(() -> new RuntimeException("Book not found"));
+    List<Unit> units = unitRepository.findByBookId(bookId);
+    return new BookWithUnitsDTO(BookWithoutCoverDTO.fromEntity(book), units);
   }
 
   public Unit addUnitToBook(Integer bookId, Integer unitNumber, MultipartFile wordlistImage) throws IOException {
